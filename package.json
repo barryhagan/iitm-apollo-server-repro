@@ -1,0 +1,25 @@
+{
+  "name": "iitm-apollo-server-repro",
+  "type": "module",
+  "version": "0.0.1",
+  "exports": "./lib/src/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@apollo/server": "~4.9.3",
+    "import-in-the-middle": "1.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "~18.16.18",
+    "typescript": "~5.1.6"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node --loader import-in-the-middle/hook.mjs ./lib/src/index.js",
+    "start-no-loader": "node ./lib/src/index.js"
+  }
+}

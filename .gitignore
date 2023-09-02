@@ -1,0 +1,4 @@
+.DS_Store
+lib
+node_modules
+newrelic_agent.log
