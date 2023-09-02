@@ -4,9 +4,17 @@ Node 18
 
 - `npm i`
 - `npm run build`
-- `npm run start`
+
+Node crashes when using the loader:
 
 ```sh
-echo $?
+% npm run start
+% echo $?
 13
+```
+
+```sh
+% npm run start-no-loader
+% echo $?
+0
 ```
