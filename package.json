@@ -21,5 +21,8 @@
     "build": "tsc",
     "start": "node --loader import-in-the-middle/hook.mjs ./lib/src/index.js",
     "start-no-loader": "node ./lib/src/index.js"
+  },
+  "volta": {
+    "node": "18.17.1"
   }
 }
